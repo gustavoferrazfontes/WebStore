@@ -1,0 +1,68 @@
+﻿<br /><br />
+<div class="col-md-4 col-md-offset-4">
+    <div class="panel panel-default">
+        <div class="panel-heading text-center">Cadastre-se!</div>
+        <div class="panel-body">
+            <form name="SignInForm" ng-submit="vm.submit()" novalidate>
+                <div class="form-group"
+                     ng-class="{ 'has-error' : SignInForm.email.$invalid && SignInForm.email.$dirty }">
+                    <label>E-mail</label>
+                    <input ng-model="vm.signIn.username"
+                           type="email"
+                           class="form-control"
+                           id="email"
+                           name="email"
+                           placeholder="informe seu e-mail"
+                           required />
+                </div>
+                <div ng-show="SignInForm.email.$invalid && SignInForm.email.$dirty"
+                     class="alert alert-danger">
+                    E-mail inválido
+                </div>
+                <div class="form-group"
+                     ng-class="{ 'has-error' : SignInForm.password.$invalid && SignInForm.password.$dirty }">
+                    <label>senha</label>
+                    <input ng-model="vm.signIn.password"
+                           ng-minlength="6"
+                           ng-maxlength="12"
+                           type="password"
+                           id="password"
+                           name="password"
+                           class="form-control"
+                           required />
+                </div>
+                <div ng-show="SignInForm.password.$invalid && SignInForm.password.$dirty"
+                     class="alert alert-danger">senha é obrigatória</div>
+                <div ng-show="SignInForm.password.$error.minlength"
+                     class="alert alert-danger">senha deve possuir no minimo 6 caracteres</div>
+                <div ng-show="SignInForm.password.$error.maxlength"
+                     class="alert alert-danger">senha deve possuir no maximo 12 caracteres</div>
+
+                <div class="form-group"
+                     ng-class="{ 'has-error' : SignInForm.confirmPassword.$invalid && SignInForm.confirmPassword.$dirty }">
+                    <label>senha</label>
+                    <input ng-model="vm.signIn.confirmPassword"
+                           ng-minlength="6"
+                           ng-maxlength="12"
+                           type="password"
+                           id="confirmPassword"
+                           name="confirmPassword"
+                           class="form-control"
+                           confirm-password="password"
+                           compare
+                           required />
+                </div>
+                <div ng-show="SignInForm.confirmPassword.$error.passwordMatch && SignInForm.confirmPassword.$dirty"
+                     class="alert alert-danger">senha não confere</div>
+                <div ng-show="SignInForm.confirmPassword.$error.minlength"
+                     class="alert alert-danger">senha deve possuir no minimo 6 caracteres</div>
+                <div ng-show="SignInForm.confirmPassword.$error.maxlength"
+                     class="alert alert-danger">senha deve possuir no maximo 12 caracteres</div>
+                <button class="btn btn-success btn-block"
+                        ng-disabled="SignInForm.$invalid || SignInForm.$pristine">
+                    Confirmar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

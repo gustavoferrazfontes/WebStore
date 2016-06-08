@@ -1,0 +1,4 @@
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\bin\Debug\Register.Core.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\bin\Debug\Register.Core.pdb
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\obj\Debug\Register.Core.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\obj\Debug\Register.Core.pdb

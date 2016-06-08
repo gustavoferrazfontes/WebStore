@@ -1,0 +1,52 @@
+﻿<br /><br />
+<div class="col-md-4 col-md-offset-4">
+    <div class="panel panel-default">
+        <div class="panel-heading text-center">Autentique-se</div>
+        <div class="panel-body">
+            <form name="LoginForm" ng-submit="vm.submit()" novalidate>
+                <div class="form-group"
+                     ng-class="{ 'has-error' : LoginForm.email.$invalid && LoginForm.email.$dirty }">
+                    <label>E-mail</label>
+                    <input ng-model="vm.login.username"
+                           type="email"
+                           class="form-control"
+                           id="email"
+                           name="email"
+                           placeholder="informe seu e-mail"
+                           required />
+                </div>
+                <div ng-show="LoginForm.email.$invalid && LoginForm.email.$dirty"
+                     class="alert alert-danger">
+                    E-mail inválido
+                </div>
+                <div class="form-group"
+                     ng-class="{ 'has-error' : LoginForm.password.$invalid && LoginForm.password.$dirty }">
+                    <label>senha</label>
+                    <input ng-model="vm.login.password"
+                           ng-minlength="6"
+                           ng-maxlength="12"
+                           type="password"
+                           id="password"
+                           name="password"
+                           class="form-control"
+                           required />
+                </div>
+                <div ng-show="LoginForm.password.$invalid && LoginForm.password.$dirty"
+                     class="alert alert-danger">senha inválida</div>
+                <div ng-show="LoginForm.password.$error.minlength"
+                     class="alert alert-danger">senha deve possuir no minimo 6 caracteres</div>
+                <div ng-show="LoginForm.password.$error.maxlength"
+                     class="alert alert-danger">senha deve possuir no maximo 12 caracteres</div>
+                <button class="btn btn-primary btn-block"
+                        ng-disabled="LoginForm.$invalid || LoginForm.$pristine">
+                    Entrar
+                </button>
+            </form>
+            <div>&nbsp;</div>
+            <!--<a class="btn btn-info btn-block" ng-click="vm.externalLogin()">Entrar com Facebook</a>
+            <div>&nbsp;</div>-->
+            <a href="#/signIn" class="btn btn-success btn-block">Cadastre-se já</a>
+        </div>
+    </div>
+</div>
+<div id="fb-root"></div>

@@ -1,0 +1,4 @@
+E:\Dev\WebStore\ClothesStore\Orders Bounded Context\Order.Core\bin\Debug\Order.Core.dll
+E:\Dev\WebStore\ClothesStore\Orders Bounded Context\Order.Core\bin\Debug\Order.Core.pdb
+E:\Dev\WebStore\ClothesStore\Orders Bounded Context\Order.Core\obj\Debug\Order.Core.dll
+E:\Dev\WebStore\ClothesStore\Orders Bounded Context\Order.Core\obj\Debug\Order.Core.pdb
