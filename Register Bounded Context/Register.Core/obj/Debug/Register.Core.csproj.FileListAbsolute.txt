@@ -2,3 +2,8 @@ E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\bin\Debug\Re
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\bin\Debug\Register.Core.pdb
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\obj\Debug\Register.Core.dll
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\obj\Debug\Register.Core.pdb
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\obj\Debug\Register.Core.csprojResolveAssemblyReference.cache
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\bin\Debug\ClotheStore.SharedKernel.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\bin\Debug\ClotheStore.SharedKernel.pdb
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\obj\Debug\Register.Core.DomainModel.Scopes.ScopesMessage.resources
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core\obj\Debug\Register.Core.csproj.GenerateResource.Cache

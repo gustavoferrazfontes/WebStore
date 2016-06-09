@@ -2,3 +2,4 @@ E:\Dev\WebStore\ClothesStore\Common\ClotheStore.SharedKernel\bin\Debug\ClotheSto
 E:\Dev\WebStore\ClothesStore\Common\ClotheStore.SharedKernel\bin\Debug\ClotheStore.SharedKernel.pdb
 E:\Dev\WebStore\ClothesStore\Common\ClotheStore.SharedKernel\obj\Debug\ClotheStore.SharedKernel.dll
 E:\Dev\WebStore\ClothesStore\Common\ClotheStore.SharedKernel\obj\Debug\ClotheStore.SharedKernel.pdb
+E:\Dev\WebStore\ClothesStore\Common\ClotheStore.SharedKernel\obj\Debug\ClotheStore.SharedKernel.csprojResolveAssemblyReference.cache

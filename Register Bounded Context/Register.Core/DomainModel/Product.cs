@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Register.Core.DomainModel.Scopes;
+using System;
 
 namespace Register.Core.DomainModel
 {
@@ -10,5 +11,20 @@ namespace Register.Core.DomainModel
         public string Description { get; private set; }
         public int QuantityInStock { get; private set; }
         public string Image { get; private set; }
+
+        public Product(Guid categoryId, string title, string description, int quantityinStock, string image)
+        {
+            Id = Guid.NewGuid();
+            CategoryId = categoryId;
+            Title = title;
+            Description = description;
+            QuantityInStock = quantityinStock;
+            Image = image;
+        }
+
+        public bool CreationIsValid()
+        {
+            return this.CreationProductScope();
+        }
     }
 }

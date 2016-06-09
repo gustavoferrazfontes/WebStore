@@ -42,9 +42,30 @@
   <ItemGroup>
     <Compile Include="DomainModel\Category.cs" />
     <Compile Include="DomainModel\Product.cs" />
+    <Compile Include="DomainModel\Scopes\CategoryScopes.cs" />
+    <Compile Include="DomainModel\Scopes\ProductScopes.cs" />
+    <Compile Include="DomainModel\Scopes\ScopesMessage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScopesMessage.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ApplicationLayer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\ClotheStore.SharedKernel\ClotheStore.SharedKernel.csproj">
+      <Project>{a355fb63-804a-4251-b07f-d7466d0693f3}</Project>
+      <Name>ClotheStore.SharedKernel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DomainModel\Scopes\ScopesMessage.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ScopesMessage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
