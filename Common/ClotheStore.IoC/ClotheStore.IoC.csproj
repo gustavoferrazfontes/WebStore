@@ -81,6 +81,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Register Bounded Context\Register.Core\Register.Core.csproj">
+      <Project>{312f0540-396b-40b1-983f-49b1c50f4945}</Project>
+      <Name>Register.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Register Bounded Context\Register.Data\Register.Data.csproj">
+      <Project>{b6ebfcba-4c58-405e-8d1d-3d5f2afc9737}</Project>
+      <Name>Register.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\User Registration\UserRegistration.Core\UserRegistration.Core.csproj">
       <Project>{6E6B2DE5-7E18-4AB6-8448-65DA1C9EF880}</Project>
       <Name>UserRegistration.Core</Name>
@@ -92,6 +100,14 @@
     <ProjectReference Include="..\..\User Registration\UserRegistration.Identity\UserRegistration.Identity.csproj">
       <Project>{7CF6E067-0E37-481B-9423-6EFD326299BB}</Project>
       <Name>UserRegistration.Identity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClotheStore.CrossCutting\ClotheStore.CrossCutting.csproj">
+      <Project>{3e314661-ff2e-4a76-8830-c3d3a6871d9a}</Project>
+      <Name>ClotheStore.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClotheStore.SharedKernel\ClotheStore.SharedKernel.csproj">
+      <Project>{a355fb63-804a-4251-b07f-d7466d0693f3}</Project>
+      <Name>ClotheStore.SharedKernel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

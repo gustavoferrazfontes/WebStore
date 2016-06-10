@@ -24,3 +24,13 @@ E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\obj\De
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\obj\Debug\Register.Core.Tests.pdb
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\ClotheStore.SharedKernel.dll
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\ClotheStore.SharedKernel.pdb
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\Register.Core.Tests.dll.config
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\Castle.Core.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\Moq.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\Moq.Sequences.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\nunit.framework.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\nunit.mocks.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\pnunit.framework.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\Castle.Core.xml
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\Moq.xml
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Core.Tests\bin\Debug\nunit.framework.xml

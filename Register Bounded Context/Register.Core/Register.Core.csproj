@@ -40,7 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationLayer\Commands\RegisterCategoryCommand.cs" />
+    <Compile Include="ApplicationLayer\Handlers\CategoryRegisteredHandler.cs" />
+    <Compile Include="ApplicationLayer\Interfaces\IRegisterCategory.cs" />
+    <Compile Include="ApplicationLayer\UseCases\RegisterCategory.cs" />
+    <Compile Include="ApplicationLayer\UseCases\UseCaseBase.cs" />
     <Compile Include="DomainModel\Category.cs" />
+    <Compile Include="DomainModel\Events\CategoryRegistered.cs" />
+    <Compile Include="DomainModel\Interfaces\Repository\ICategoryRepository.cs" />
     <Compile Include="DomainModel\Product.cs" />
     <Compile Include="DomainModel\Scopes\CategoryScopes.cs" />
     <Compile Include="DomainModel\Scopes\ProductScopes.cs" />
@@ -51,9 +58,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ApplicationLayer\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\Common\ClotheStore.SharedKernel\ClotheStore.SharedKernel.csproj">
       <Project>{a355fb63-804a-4251-b07f-d7466d0693f3}</Project>

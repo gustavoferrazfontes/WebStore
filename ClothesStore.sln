@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceSystem.WebApi", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register.Core.Tests", "Register Bounded Context\Register.Core.Tests\Register.Core.Tests.csproj", "{3CCB75AD-5992-4710-A0A9-AF4578E1664D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClotheStore.CrossCutting", "Common\ClotheStore.CrossCutting\ClotheStore.CrossCutting.csproj", "{3E314661-FF2E-4A76-8830-C3D3A6871D9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,10 @@ Global
 		{3CCB75AD-5992-4710-A0A9-AF4578E1664D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CCB75AD-5992-4710-A0A9-AF4578E1664D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CCB75AD-5992-4710-A0A9-AF4578E1664D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E314661-FF2E-4A76-8830-C3D3A6871D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E314661-FF2E-4A76-8830-C3D3A6871D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E314661-FF2E-4A76-8830-C3D3A6871D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E314661-FF2E-4A76-8830-C3D3A6871D9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,5 +104,6 @@ Global
 		{312F0540-396B-40B1-983F-49B1C50F4945} = {101B37D4-D990-4A40-8249-32FFEE19EE94}
 		{B6EBFCBA-4C58-405E-8D1D-3D5F2AFC9737} = {101B37D4-D990-4A40-8249-32FFEE19EE94}
 		{3CCB75AD-5992-4710-A0A9-AF4578E1664D} = {101B37D4-D990-4A40-8249-32FFEE19EE94}
+		{3E314661-FF2E-4A76-8830-C3D3A6871D9A} = {1ECEE40F-0404-490E-B1AE-AE616356FCBF}
 	EndGlobalSection
 EndGlobal

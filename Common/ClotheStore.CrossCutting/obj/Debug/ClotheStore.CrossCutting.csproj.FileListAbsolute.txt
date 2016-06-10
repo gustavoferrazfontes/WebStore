@@ -1,0 +1,7 @@
+E:\Dev\WebStore\ClothesStore\Common\ClotheStore.CrossCutting\bin\Debug\ClotheStore.CrossCutting.dll
+E:\Dev\WebStore\ClothesStore\Common\ClotheStore.CrossCutting\bin\Debug\ClotheStore.CrossCutting.pdb
+E:\Dev\WebStore\ClothesStore\Common\ClotheStore.CrossCutting\bin\Debug\ClotheStore.SharedKernel.dll
+E:\Dev\WebStore\ClothesStore\Common\ClotheStore.CrossCutting\bin\Debug\ClotheStore.SharedKernel.pdb
+E:\Dev\WebStore\ClothesStore\Common\ClotheStore.CrossCutting\obj\Debug\ClotheStore.CrossCutting.csprojResolveAssemblyReference.cache
+E:\Dev\WebStore\ClothesStore\Common\ClotheStore.CrossCutting\obj\Debug\ClotheStore.CrossCutting.dll
+E:\Dev\WebStore\ClothesStore\Common\ClotheStore.CrossCutting\obj\Debug\ClotheStore.CrossCutting.pdb

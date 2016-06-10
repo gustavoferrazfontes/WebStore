@@ -45,6 +45,8 @@
     <Compile Include="Events\Interfaces\IDomainEvent.cs" />
     <Compile Include="Interfaces\IContainer.cs" />
     <Compile Include="Interfaces\IHandler.cs" />
+    <Compile Include="Interfaces\INotifiable.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validation\AssertionConcern.cs" />
   </ItemGroup>
