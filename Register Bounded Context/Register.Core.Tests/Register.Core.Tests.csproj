@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationLayerTests\RegisterCategoryTests.cs" />
+    <Compile Include="ApplicationLayerTests\ProductManagerTests.cs" />
     <Compile Include="DomainModelTests\CategoryTests.cs" />
     <Compile Include="DomainModelTests\ProductTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

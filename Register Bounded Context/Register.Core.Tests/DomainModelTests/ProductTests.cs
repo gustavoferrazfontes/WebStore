@@ -1,16 +1,26 @@
-﻿using FluentAssertions;
+﻿using ClotheStore.SharedKernel.Events;
+using FluentAssertions;
 using Register.Core.DomainModel;
 using System;
 using Xunit;
 
 namespace GivenAProduct
 {
-    public class WhenCreatedAProductWithoutCategoryId
+    public class CreateProductFixture
+    {
+        public CreateProductFixture()
+        {
+            DomainEvent.Container = null; 
+        }
+    }
+    
+    public class WhenCreatedAProductWithoutCategoryId:IClassFixture<CreateProductFixture>
     {
         Product product;
 
         public WhenCreatedAProductWithoutCategoryId()
         {
+
             product = new Product(new Guid(), "title Test", "desc test", 1, string.Empty);
         }
 
@@ -24,7 +34,7 @@ namespace GivenAProduct
         }
     }
 
-    public class WhenCreatedAProductWithoutTitle
+    public class WhenCreatedAProductWithoutTitle : IClassFixture<CreateProductFixture>
     {
         Product product;
 
@@ -43,7 +53,7 @@ namespace GivenAProduct
         }
     }
 
-    public class WhenCreatedAProductWithoutDescription
+    public class WhenCreatedAProductWithoutDescription : IClassFixture<CreateProductFixture>
     {
         Product product;
 
@@ -62,7 +72,7 @@ namespace GivenAProduct
         }
     }
 
-    public class WhenCreatedAProductWithQuantityLessThanZero
+    public class WhenCreatedAProductWithQuantityLessThanZero : IClassFixture<CreateProductFixture>
     {
         Product product;
 

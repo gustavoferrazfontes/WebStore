@@ -16,7 +16,7 @@ using Xunit;
 namespace GivenARegisterCategory
 {
 
-
+    
     public class RegisterCategoryFixture
     {
 
@@ -36,12 +36,11 @@ namespace GivenARegisterCategory
             _CategoryRegisteredHandler = new CategoryRegisteredHandler();
             registerCategory = new RegisterCategory(_mockCategoryRepository.Object, _mockDomainNotification.Object, _mockUnitOfWork.Object);
 
-            _mockContainerEvent = new Mock<IContainer>();
-            _mockContainerEvent.Setup(_ => _.GetService(It.IsAny<Type>())).Returns(_CategoryRegisteredHandler);
-            DomainEvent.Container = _mockContainerEvent.Object;
-        }
-    }
 
+        }
+
+
+    }
 
     public class WhenCreateACategory : IClassFixture<RegisterCategoryFixture>
     {
@@ -50,6 +49,9 @@ namespace GivenARegisterCategory
         public WhenCreateACategory(RegisterCategoryFixture fixture)
         {
             _fixture = fixture;
+            _fixture._mockContainerEvent = new Mock<IContainer>();
+            _fixture._mockContainerEvent.Setup(_ => _.GetService(It.IsAny<Type>())).Returns(_fixture._CategoryRegisteredHandler);
+            DomainEvent.Container = _fixture._mockContainerEvent.Object;
         }
 
 
@@ -57,8 +59,10 @@ namespace GivenARegisterCategory
         public void ThenAddCallToRepository()
         {
             var command = new RegisterCategoryCommand("Test Category");
+
             using (Sequence.Create())
             {
+
                 _fixture._mockCategoryRepository.Setup(_ => _.SaveNewCategory(It.IsAny<Category>())).InSequence();
                 _fixture._mockUnitOfWork.Setup(_ => _.Commit()).InSequence();
 
