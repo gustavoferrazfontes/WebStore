@@ -42,15 +42,21 @@
   <ItemGroup>
     <Compile Include="ApplicationLayer\Commands\RegisterCategoryCommand.cs" />
     <Compile Include="ApplicationLayer\Commands\RegisterProductCommand.cs" />
+    <Compile Include="ApplicationLayer\Commands\RemoveCategoryCommand.cs" />
+    <Compile Include="ApplicationLayer\Commands\UpdateCategoryCommand.cs" />
+    <Compile Include="ApplicationLayer\Handlers\CategoryUpdatedHandler.cs" />
     <Compile Include="ApplicationLayer\Handlers\CategoryRegisteredHandler.cs" />
+    <Compile Include="ApplicationLayer\Handlers\CategoryRemovedHandler.cs" />
     <Compile Include="ApplicationLayer\Handlers\ProductRegisteredHandler.cs" />
     <Compile Include="ApplicationLayer\Interfaces\IProductManager.cs" />
-    <Compile Include="ApplicationLayer\Interfaces\IRegisterCategory.cs" />
+    <Compile Include="ApplicationLayer\Interfaces\ICategoryManager.cs" />
     <Compile Include="ApplicationLayer\UseCases\ProductManager.cs" />
-    <Compile Include="ApplicationLayer\UseCases\RegisterCategory.cs" />
+    <Compile Include="ApplicationLayer\UseCases\CategoryManager.cs" />
     <Compile Include="ApplicationLayer\UseCases\UseCaseBase.cs" />
     <Compile Include="DomainModel\Category.cs" />
     <Compile Include="DomainModel\Events\CategoryRegistered.cs" />
+    <Compile Include="DomainModel\Events\CategoryRemoved.cs" />
+    <Compile Include="DomainModel\Events\CategoryUpdated.cs" />
     <Compile Include="DomainModel\Events\ProductRegistered.cs" />
     <Compile Include="DomainModel\Interfaces\Repository\ICategoryRepository.cs" />
     <Compile Include="DomainModel\Interfaces\Repository\IProductRepository.cs" />

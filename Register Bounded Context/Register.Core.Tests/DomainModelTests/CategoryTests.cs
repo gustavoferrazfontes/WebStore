@@ -5,7 +5,7 @@ using ClotheStore.SharedKernel.Events;
 
 namespace GivenACategory
 {
-    
+
     public class WhenCreateCategoryWithNullOrEmptyTitle
     {
         Category newCategory;
@@ -20,6 +20,23 @@ namespace GivenACategory
         {
             var actual = newCategory.CreationIsValid();
             actual.Should().Be(false);
+        }
+    }
+
+    public class WhenUpdateACategory
+    {
+        Category newCategory;
+        public WhenUpdateACategory()
+        {
+            DomainEvent.Container = null;
+            newCategory = new Category("title");
+            newCategory.ChangeData("new title");
+        }
+
+        [Fact]
+        public void ThenChangeTheTitle()
+        {
+            newCategory.Title.Should().Be("new title");
         }
     }
 }

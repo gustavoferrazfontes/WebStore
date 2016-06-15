@@ -2,8 +2,10 @@
 
 namespace Register.Core.ApplicationLayer.Interfaces
 {
-    public interface IRegisterCategory
+    public interface ICategoryManager
     {
         void Register(RegisterCategoryCommand command);
+        void Remove(RemoveCategoryCommand command);
+        void Update(UpdateCategoryCommand command);
     }
 }

@@ -12,5 +12,14 @@ namespace Register.Core.DomainModel.Scopes
                     AssertionConcern.AssertNotNull(category.Title, ScopesMessage.CategoryTitleIsRequired)
                 );
         }
+
+        public static bool ChangeDataCategoryScope(this Category category)
+        {
+            return AssertionConcern.IsSatisfiedBy
+                (
+                    AssertionConcern.AssertNotEmpty(category.Title, ScopesMessage.CategoryTitleIsRequired),
+                    AssertionConcern.AssertNotNull(category.Title, ScopesMessage.CategoryTitleIsRequired)
+                );
+        }
     }
 }

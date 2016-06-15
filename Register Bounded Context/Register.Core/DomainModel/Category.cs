@@ -17,5 +17,15 @@ namespace Register.Core.DomainModel
         {
             return this.CreateCategoryScope();
         }
+
+        public bool ChangeIsValid()
+        {
+            return this.ChangeDataCategoryScope();
+        }
+
+        public void ChangeData(string title)
+        {
+            Title = title;
+        }
     }
 }
