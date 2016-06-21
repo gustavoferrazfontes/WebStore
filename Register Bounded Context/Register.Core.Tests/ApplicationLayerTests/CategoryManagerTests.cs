@@ -6,10 +6,12 @@ using Moq.Sequences;
 using Register.Core.ApplicationLayer.Commands;
 using Register.Core.ApplicationLayer.Handlers;
 using Register.Core.ApplicationLayer.Interfaces;
+using Register.Core.ApplicationLayer.Queries;
 using Register.Core.ApplicationLayer.UseCases;
 using Register.Core.DomainModel;
 using Register.Core.DomainModel.Interfaces.Repository;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
@@ -21,6 +23,7 @@ namespace GivenARegisterCategory
     {
 
         public ICategoryManager managerCategory;
+        public ICategoryQuery categoryQuery;
         public Mock<ICategoryRepository> _mockCategoryRepository;
         public CategoryRegisteredHandler _CategoryRegisteredHandler;
         public CategoryRemovedHandler _categoryRemovedHandler;
@@ -40,7 +43,7 @@ namespace GivenARegisterCategory
             _categoryChangedHandler = new CategoryUpdatedHandler();
             _mockContainerEvent = new Mock<IContainer>();
             managerCategory = new CategoryManager(_mockCategoryRepository.Object, _mockDomainNotification.Object, _mockUnitOfWork.Object);
-
+            categoryQuery = new CategoryQuery(_mockCategoryRepository.Object);
 
         }
 
@@ -154,5 +157,28 @@ namespace GivenARegisterCategory
             _fixture._categoryChangedHandler.HasNotifications().Should().Be(true);
         }
 
+    }
+
+    public class WhenListCategories : IClassFixture<CategoryManagerFixture>
+    {
+        private readonly CategoryManagerFixture _fixture;
+        private List<Category> items;
+        public WhenListCategories(CategoryManagerFixture fixture)
+        {
+            _fixture = fixture;
+            items = new List<Category>();
+            items.Add(new Category("Test category"));
+
+        }
+
+        [Fact]
+        public void ThenGetAllTheCategories()
+        {
+            using (Sequence.Create())
+            {
+                _fixture._mockCategoryRepository.Setup(_ => _.GetAll()).InSequence().Returns(items);
+                _fixture.categoryQuery.GetCategories();
+            }
+        }
     }
 }

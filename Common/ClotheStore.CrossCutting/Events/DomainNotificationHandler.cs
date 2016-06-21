@@ -12,6 +12,11 @@ namespace ClotheStore.CrossCutting.Events
             lstDomainNotifications = new List<DomainNotification>();
         }
 
+        public DomainNotificationHandler()
+        {
+            lstDomainNotifications = new List<DomainNotification>();
+        }
+
         public void Handle(DomainNotification args)
         {
             lstDomainNotifications.Add(args);

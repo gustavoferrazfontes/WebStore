@@ -22,7 +22,7 @@ namespace Register.Core.ApplicationLayer.UseCases
             }
             else
             {
-                _uow.Rollback();
+                //_uow.Rollback();
                 return false;
             }
         }

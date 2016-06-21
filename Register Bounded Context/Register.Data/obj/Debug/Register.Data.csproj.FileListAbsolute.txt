@@ -8,3 +8,9 @@ E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\bin\Debug\En
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\bin\Debug\EntityFramework.SqlServer.dll
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\bin\Debug\EntityFramework.xml
 E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\bin\Debug\ClotheStore.SharedKernel.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\bin\Debug\Register.Core.dll
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\bin\Debug\ClotheStore.SharedKernel.pdb
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\bin\Debug\Register.Core.pdb
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\obj\Debug\Register.Data.Migrations.v1.resources
+E:\Dev\WebStore\ClothesStore\Register Bounded Context\Register.Data\obj\Debug\Register.Data.csproj.GenerateResource.Cache

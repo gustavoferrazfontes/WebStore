@@ -48,8 +48,11 @@
     <Compile Include="ApplicationLayer\Handlers\CategoryRegisteredHandler.cs" />
     <Compile Include="ApplicationLayer\Handlers\CategoryRemovedHandler.cs" />
     <Compile Include="ApplicationLayer\Handlers\ProductRegisteredHandler.cs" />
+    <Compile Include="ApplicationLayer\Interfaces\ICategoryQuery.cs" />
     <Compile Include="ApplicationLayer\Interfaces\IProductManager.cs" />
     <Compile Include="ApplicationLayer\Interfaces\ICategoryManager.cs" />
+    <Compile Include="ApplicationLayer\Queries\CategoryQuery.cs" />
+    <Compile Include="ApplicationLayer\Queries\ListOfCategory.cs" />
     <Compile Include="ApplicationLayer\UseCases\ProductManager.cs" />
     <Compile Include="ApplicationLayer\UseCases\CategoryManager.cs" />
     <Compile Include="ApplicationLayer\UseCases\UseCaseBase.cs" />
@@ -70,7 +73,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ApplicationLayer\Notifiers\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\ClotheStore.SharedKernel\ClotheStore.SharedKernel.csproj">
       <Project>{a355fb63-804a-4251-b07f-d7466d0693f3}</Project>

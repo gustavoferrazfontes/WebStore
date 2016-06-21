@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Register.Core.Tests", "Regi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClotheStore.CrossCutting", "Common\ClotheStore.CrossCutting\ClotheStore.CrossCutting.csproj", "{3E314661-FF2E-4A76-8830-C3D3A6871D9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Tests", "WebApi.Tests\WebApi.Tests.csproj", "{1B95E436-38A5-4F96-B235-14993E585CD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,10 @@ Global
 		{3E314661-FF2E-4A76-8830-C3D3A6871D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E314661-FF2E-4A76-8830-C3D3A6871D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E314661-FF2E-4A76-8830-C3D3A6871D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B95E436-38A5-4F96-B235-14993E585CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B95E436-38A5-4F96-B235-14993E585CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B95E436-38A5-4F96-B235-14993E585CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B95E436-38A5-4F96-B235-14993E585CD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

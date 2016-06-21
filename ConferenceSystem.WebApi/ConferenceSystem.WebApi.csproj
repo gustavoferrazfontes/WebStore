@@ -205,16 +205,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helpers\" />
+    <Folder Include="Views\CategoryManager\" />
     <Folder Include="wwwroot\src\admin\public\prod\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SimpleInjectorWebApiInitializer.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CategoryManagerController.cs" />
     <Compile Include="Controllers\UserRegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DomainEventsContainer.cs" />
     <Compile Include="Security\FacebookAuthProvider.cs" />
     <Compile Include="Security\SimpleAuthorizationServerProvider.cs" />
     <Compile Include="Startup.cs" />
@@ -791,6 +793,14 @@
     <ProjectReference Include="..\Common\ClotheStore.IoC\ClotheStore.IoC.csproj">
       <Project>{70867EF2-4906-43E0-8D9C-1FF3EF31D583}</Project>
       <Name>ClotheStore.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\ClotheStore.SharedKernel\ClotheStore.SharedKernel.csproj">
+      <Project>{A355FB63-804A-4251-B07F-D7466D0693F3}</Project>
+      <Name>ClotheStore.SharedKernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Register Bounded Context\Register.Core\Register.Core.csproj">
+      <Project>{312F0540-396B-40B1-983F-49B1C50F4945}</Project>
+      <Name>Register.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\User Registration\UserRegistration.Identity\UserRegistration.Identity.csproj">
       <Project>{7CF6E067-0E37-481B-9423-6EFD326299BB}</Project>

@@ -11,6 +11,7 @@ namespace Register.Core.DomainModel
         public string Description { get; private set; }
         public int QuantityInStock { get; private set; }
         public string Image { get; private set; }
+        public Category Category { get; private set; }
 
         public Product(Guid categoryId, string title, string description, int quantityinStock, string image)
         {

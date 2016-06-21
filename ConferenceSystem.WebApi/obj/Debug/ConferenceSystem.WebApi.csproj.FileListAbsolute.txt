@@ -180,3 +180,11 @@ E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\UserRegistration.Core.p
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\obj\Debug\ConferenceSystem.WebApi.csprojResolveAssemblyReference.cache
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\obj\Debug\ConferenceSystem.WebApi.dll
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\obj\Debug\ConferenceSystem.WebApi.pdb
+E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\ClotheStore.SharedKernel.dll
+E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Register.Core.dll
+E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\ClotheStore.SharedKernel.pdb
+E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Register.Core.pdb
+E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Register.Data.dll
+E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Register.Data.pdb
+E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\ClotheStore.CrossCutting.dll
+E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\ClotheStore.CrossCutting.pdb

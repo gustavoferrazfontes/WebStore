@@ -13,6 +13,11 @@ namespace Register.Core.DomainModel
             Title = title;
         }
 
+        protected Category()
+        {
+
+        }
+
         public bool CreationIsValid()
         {
             return this.CreateCategoryScope();

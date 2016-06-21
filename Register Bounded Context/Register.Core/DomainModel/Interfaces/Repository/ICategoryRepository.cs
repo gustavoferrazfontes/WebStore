@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Register.Core.ApplicationLayer.Queries;
+using System;
+using System.Collections.Generic;
 
 namespace Register.Core.DomainModel.Interfaces.Repository
 {
@@ -6,7 +8,7 @@ namespace Register.Core.DomainModel.Interfaces.Repository
     {
         void SaveNewCategory(Category category);
         void Remove(Guid Id);
-        void Remove(object id);
         Category GetCategory(Guid guid);
+        IEnumerable<Category> GetAll();
     }
 }
