@@ -130,7 +130,7 @@ namespace GivenARegisterCategory
             _fixture = fixture;
 
             categoryFound = new Category("Title test");
-            command = new UpdateCategoryCommand("title updated");
+            command = new UpdateCategoryCommand("title updated", Guid.NewGuid().ToString());
 
             _fixture._mockContainerEvent.Setup(_ => _.GetService(It.IsAny<Type>())).Returns(_fixture._categoryChangedHandler);
             DomainEvent.Container = _fixture._mockContainerEvent.Object;

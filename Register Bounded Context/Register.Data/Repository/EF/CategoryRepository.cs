@@ -18,12 +18,13 @@ namespace Register.Data.Repository.EF
 
         public Category GetCategory(Guid guid)
         {
-            throw new NotImplementedException();
+            return _context.Categories.Find(guid);
         }
 
         public void Remove(Guid Id)
         {
-            throw new NotImplementedException();
+            var category = _context.Categories.Find(Id);
+            _context.Categories.Remove(category);
         }
 
         public void SaveNewCategory(Category category)

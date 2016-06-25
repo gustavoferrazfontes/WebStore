@@ -6,9 +6,10 @@ namespace Register.Core.ApplicationLayer.Commands
     {
 
 
-        public UpdateCategoryCommand(string title)
+        public UpdateCategoryCommand(string title, string id)
         {
             Title = title;
+            Id = Guid.Parse(id);
         }
 
         public Guid Id { get; private set; }

@@ -38,14 +38,20 @@ namespace ClotheStore.IoC
             container.RegisterPerWebRequest<IUnitOfWork, RegisterUnitOfWork>();
 
             var domainHandler = Lifestyle.Singleton.CreateRegistration<DomainNotificationHandler>(container);
-            var categoryHandler = Lifestyle.Singleton.CreateRegistration<CategoryRegisteredHandler>(container);
-
+            var categoryRegisteredHandler = Lifestyle.Singleton.CreateRegistration<CategoryRegisteredHandler>(container);
+            var categoryUpdatedHandler = Lifestyle.Singleton.CreateRegistration<CategoryUpdatedHandler>(container);
+            var categoryRemovedHandler = Lifestyle.Singleton.CreateRegistration<CategoryRemovedHandler>(container);
 
             //register multiple interface to same implementation (using a CreateRegistration method below)
             container.AddRegistration(typeof(IHandler<DomainNotification>), domainHandler);
             container.AddRegistration(typeof(INotifiable<DomainNotification>), domainHandler);
-            container.AddRegistration(typeof(IHandler<CategoryRegistered>), categoryHandler);
-            container.AddRegistration(typeof(INotifiable<CategoryRegistered>), categoryHandler);
+            container.AddRegistration(typeof(IHandler<CategoryRegistered>), categoryRegisteredHandler);
+            container.AddRegistration(typeof(INotifiable<CategoryRegistered>), categoryRegisteredHandler);
+            container.AddRegistration(typeof(IHandler<CategoryUpdated>), categoryUpdatedHandler);
+            container.AddRegistration(typeof(INotifiable<CategoryUpdated>), categoryUpdatedHandler);
+            container.AddRegistration(typeof(IHandler<CategoryRemoved>), categoryRemovedHandler);
+            container.AddRegistration(typeof(INotifiable<CategoryRemoved>), categoryRemovedHandler);
+
 
 
 

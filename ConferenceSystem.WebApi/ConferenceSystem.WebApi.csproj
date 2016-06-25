@@ -221,6 +221,8 @@
     <Compile Include="Security\SimpleAuthorizationServerProvider.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\NewCategory.cs" />
+    <Compile Include="ViewModel\UpdateCategory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

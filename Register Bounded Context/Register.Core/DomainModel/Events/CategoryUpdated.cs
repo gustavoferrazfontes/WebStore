@@ -12,7 +12,7 @@ namespace Register.Core.DomainModel.Events
         {
             get
             {
-                throw new NotImplementedException();
+                return _dateOccurred;
             }
         }
 
