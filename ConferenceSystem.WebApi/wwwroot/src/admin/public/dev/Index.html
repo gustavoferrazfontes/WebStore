@@ -7,7 +7,6 @@
     <!--ajusta resolução para device-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistema de conferência - Setor Administrativo</title>
-
     <link href="../../bower_components/bootswatch/journal/bootstrap.css" rel="stylesheet" />
     <link href="../../bower_components/animate.css/animate.css" rel="stylesheet" />
     <link href="../../bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -23,29 +22,25 @@
     </style>
 </head>
 <body>
-
     <div ng-include="'pages/shared/loadbar.html'"></div>
     <div ng-include="'pages/shared/headbar.html'"></div>
-
     <div class="container" ng-view></div>
-
     <script src="../../bower_components/jquery/dist/jquery.js"></script>
     <script src="../../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../../bower_components/toastr/toastr.js"></script>
     <script src="../../bower_components/angular/angular.js"></script>
     <script src="../../bower_components/angular-route/angular-route.js"></script>
-
     <script src="../../app/app.js"></script>
     <script src="../../app/routes.js"></script>
     <script src="../../app/config.js"></script>
-
     <script src="../../app/factories/account-factory.js"></script>
     <script src="../../app/factories/interceptors-factory.js"></script>
-
+    <script src="../../app/factories/category-factory.js"></script>
     <script src="../../app/controllers/login-controller.js"></script>
     <script src="../../app/controllers/logout-controller.js"></script>
     <script src="../../app/controllers/signIn-controller.js"></script>
-
+    <script src="../../app/controllers/associate-controller.js"></script>
+    <script src="../../app/controllers/category-controller.js"></script>
     <script src="../../app/directives/confirm-password-directive.js"></script>
 </body>
 </html>

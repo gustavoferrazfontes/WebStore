@@ -1,4 +1,5 @@
 
+
 // Karma configuration
 // Generated on Wed May 11 2016 01:18:06 GMT-0300 (Hora oficial do Brasil)
 
@@ -17,9 +18,12 @@ module.exports = function (config) {
         // list of files / patterns to load in the browser
         files: [
             'bower_components/angular/angular.js',
+            'bower_components/angular-route/angular-route.js',
             'bower_components/angular-mocks/angular-mocks.js',
             'app/**/*.js',
-            'app*.js',
+            'app.js',
+            'config.js',
+            'routes.js',
             'tests/*.Spec.js'
         ],
 

@@ -13,7 +13,6 @@ using Register.Data.Config;
 using Register.Data.Context;
 using Register.Data.Repository.EF;
 using SimpleInjector;
-using System.Reflection;
 using UserRegistration.Core.Domain.Model.UserAggregate.Interfaces;
 using UserRegistration.Data.Context;
 using UserRegistration.Data.Repository;

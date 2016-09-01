@@ -157,10 +157,6 @@ E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Microsoft.Owin.Security
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Microsoft.Owin.Security.Cookies.xml
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Microsoft.Owin.Security.Facebook.xml
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Microsoft.Owin.Security.OAuth.xml
-E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\SimpleInjector.xml
-E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\SimpleInjector.Extensions.ExecutionContextScoping.xml
-E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\SimpleInjector.Integration.Web.xml
-E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\SimpleInjector.Integration.WebApi.xml
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\System.Web.Http.Cors.xml
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\System.Web.Http.Owin.xml
 E:\Dev\WebStore\ClothesStore\ConferenceSystem.WebApi\bin\Newtonsoft.Json.xml

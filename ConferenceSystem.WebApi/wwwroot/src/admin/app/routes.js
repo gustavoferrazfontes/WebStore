@@ -21,6 +21,16 @@
                 controller: 'SignInCtrl',
                 controllerAs: 'vm',
                 templateUrl: 'pages/account/signIn.html'
-            });
+            })
+            .when("/associate", {
+                controller: "AssociateCtrl",
+                controllerAs:'vm',
+            templateUrl: "pages/shared/associate.html"
+            })
+            .when("/categories", {
+             controller: "CategoryCtrl",
+             controllerAs: 'vm',
+             templateUrl: "pages/category/index.html"
+         });
     });
 }) ();

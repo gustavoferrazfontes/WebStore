@@ -206,7 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\CategoryManager\" />
-    <Folder Include="wwwroot\src\admin\public\prod\" />
+    <Folder Include="wwwroot\src\admin\public\dist\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SimpleInjectorWebApiInitializer.cs" />
@@ -217,10 +217,12 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\DomainEventsContainer.cs" />
+    <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Security\FacebookAuthProvider.cs" />
     <Compile Include="Security\SimpleAuthorizationServerProvider.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ExternalLogin.cs" />
     <Compile Include="ViewModel\NewCategory.cs" />
     <Compile Include="ViewModel\UpdateCategory.cs" />
   </ItemGroup>
@@ -235,11 +237,14 @@
     </Content>
     <Content Include="wwwroot\src\admin\app\app.js" />
     <Content Include="wwwroot\src\admin\app\config.js" />
+    <Content Include="wwwroot\src\admin\app\controllers\associate-controller.js" />
+    <Content Include="wwwroot\src\admin\app\controllers\category-controller.js" />
     <Content Include="wwwroot\src\admin\app\controllers\login-controller.js" />
     <Content Include="wwwroot\src\admin\app\controllers\logout-controller.js" />
     <Content Include="wwwroot\src\admin\app\controllers\signIn-controller.js" />
     <Content Include="wwwroot\src\admin\app\directives\confirm-password-directive.js" />
     <Content Include="wwwroot\src\admin\app\factories\account-factory.js" />
+    <Content Include="wwwroot\src\admin\app\factories\category-factory.js" />
     <Content Include="wwwroot\src\admin\app\factories\interceptors-factory.js" />
     <Content Include="wwwroot\src\admin\app\routes.js" />
     <Content Include="wwwroot\src\admin\bower_components\angular-mocks\angular-mocks.js" />
@@ -490,12 +495,15 @@
     <Content Include="wwwroot\src\admin\bower_components\toastr\toastr.min.css" />
     <Content Include="wwwroot\src\admin\bower_components\toastr\toastr.min.js" />
     <Content Include="wwwroot\src\admin\karma.conf.js" />
+    <Content Include="wwwroot\src\admin\public\dev\authComplete.html" />
     <Content Include="wwwroot\src\admin\public\dev\Index.html" />
     <Content Include="wwwroot\src\admin\public\dev\pages\account\login.html" />
     <Content Include="wwwroot\src\admin\public\dev\pages\account\signIn.html" />
+    <Content Include="wwwroot\src\admin\public\dev\pages\category\Index.html" />
+    <Content Include="wwwroot\src\admin\public\dev\pages\shared\associate.html" />
+    <Content Include="wwwroot\src\admin\public\scripts\authComplete.js" />
     <Content Include="wwwroot\src\admin\public\dev\pages\shared\headbar.html" />
     <Content Include="wwwroot\src\admin\public\dev\pages\shared\loadbar.html" />
-    <Content Include="wwwroot\src\admin\tests\login-controller.Spec.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

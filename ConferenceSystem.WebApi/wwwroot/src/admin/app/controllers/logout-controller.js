@@ -3,7 +3,7 @@
 
     angular.module('confsys').controller("LogoutCtrl", LogoutCtrl);
 
-    LogoutCtrl.$inject = ['$rootScope', '$location', 'SETTINGS']
+    LogoutCtrl.$inject = ['$rootScope', '$location', 'SETTINGS'];
 
     function LogoutCtrl($rootScope, $location, SETTINGS) {
         var vm = this;
